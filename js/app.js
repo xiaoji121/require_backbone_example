@@ -1,6 +1,7 @@
 require.config({
   paths: {
-    'jquery': 'lib/jquery'
+    'jquery': 'lib/jquery',
+    'text': 'lib/require_plugin/text'
   },
   shim: {
     'lib/underscore': {

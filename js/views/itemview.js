@@ -1,8 +1,8 @@
-define(["lib/backbone"], function(Backbone) {
+define(["lib/backbone",'text!templates/itemView.html'], function(Backbone, ItemTemp) {
   var ItemView = Backbone.View.extend({
     tagName: "div",
     className: "item-wrap",
-    template: _.template($("#itemTemplate").html()),
+    template: _.template(ItemTemp),
 
     render: function() {
       this.$el.html(this.template(this.model.toJSON()));
